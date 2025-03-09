@@ -1,0 +1,17 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+        int vowelCount=0;
+        string testInput="My name is Louis Paul Njogu Gichiah";
+        foreach (char c in testInput.ToLower())
+        {
+            if (c=='a' || c=='e'|| c=='i'|| c=='o' || c=='u')
+            {
+                vowelCount++;
+            }
+        }
+        Console.WriteLine("The number of vowels is: "+vowelCount);
+    }
+}
