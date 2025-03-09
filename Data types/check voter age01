@@ -1,0 +1,20 @@
+using System;
+class Program
+{
+    static void Main()
+    {
+      Console.WriteLine("Enter Voter Age: ");
+      string inputAge = Console.ReadLine();
+      if(int.TryParse(inputAge, out int userAge))
+      {
+          if (userAge >= 18)
+          {
+              Console.WriteLine("Access Granted");
+          }
+          else
+          {
+              Console.WriteLine("Access Denied");
+          }
+      }
+    }
+}
