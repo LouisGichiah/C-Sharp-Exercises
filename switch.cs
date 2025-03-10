@@ -4,6 +4,8 @@ class Program
     static void Main()
     {
         string button;
+        Console.WriteLine("Press Corresponding button for drink: Water, Soda, Coffee");
+        button=(Console.ReadLine());
         switch (button)
         {
             case "Water":
