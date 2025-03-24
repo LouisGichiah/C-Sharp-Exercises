@@ -6,13 +6,13 @@ class Program
         int number=0;
         Console.WriteLine("Enter a valid integer:");
         number=int.Parse(Console.ReadLine());
-        int factorial = 1;
-        int factorialOut;
-        while(factorial<=5)
-        {
-            factorialOut= number*factorial;
-            Console.WriteLine("the factorial of " +number+ " is " +factorialOut);
-            factorial++;
-        }
-    }
+		int factorial = 1;
+		while (number > 0)
+		{
+			factorial *= number;
+			number--;
+		}
+
+		Console.WriteLine("Factorial: " + factorial);
+	}
 }
