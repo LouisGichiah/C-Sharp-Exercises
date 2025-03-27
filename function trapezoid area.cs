@@ -1,8 +1,8 @@
 using System;
 class Program
 {
-    static double CalculateTrapezoidArea (double topLength, double bottomLength, double height)
+    static double CalculateTrapezoidArea (double a, double b, double height)
     {
-        return (topLength + bottomLength)/2 * height;
+        return (a+ b)/2 * height;
     }
 }
