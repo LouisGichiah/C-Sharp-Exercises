@@ -1,9 +1,9 @@
 using System;
 class Program
 {
-        static double function calculate|TriangleArea (double base, double height)
+        static double function calculateTriangleArea (double base, double height)
         {
-            return lenth * width;
+            return base * height;
         }
     
 }
