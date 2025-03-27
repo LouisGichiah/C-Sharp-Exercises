@@ -1,7 +1,7 @@
 using System;
 class Program
 {
-        static double function calculateRectangleArea (double length, double width)
+        static double function calculate|TriangleArea (double base, double height)
         {
             return lenth * width;
         }
