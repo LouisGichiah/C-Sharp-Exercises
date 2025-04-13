@@ -1,17 +1,7 @@
 using System;
 class Program
 {
-    public static bool IsPositive(int Number)
-    {
-        if (Number % 2 == 0)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+   
     static void Main()
     {
         Console.WriteLine("Enter a number: ");
@@ -24,8 +14,17 @@ class Program
             else 
             {
                 Console.WriteLine("The number "+testNumber+ " is odd");     
-            }
-        
-       
+            } 
+    }
+    static bool IsPositive(int Number)
+    {
+        if (Number % 2 == 0)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
     }
 }
