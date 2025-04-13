@@ -1,17 +1,7 @@
 using System;
 class Program
 {
-    public static bool IsOldEnoughToDrive(int age)
-    {
-        if (age >= 18)
-        {
-            return true;
-        }
-        else
-        {
-            return false;
-        }
-    }
+    
         static void Main()
         {
             
@@ -27,4 +17,15 @@ class Program
                 Console.WriteLine("The Person is NOT OLD ENOUGH to Drive");
             }
         }
+        static bool IsOldEnoughToDrive(int age)
+    {
+        if (age >= 18)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
     }
