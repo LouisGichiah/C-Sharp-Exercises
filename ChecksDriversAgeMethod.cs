@@ -6,7 +6,7 @@ class Program
         Console.WriteLine("Enter the drivers age: ");
         int driverAge = int.Parse(Console.ReadLine());
         bool canDrive = IsOldEnoughToDrive(driverAge);
-        if(canDrive == true)
+        if(canDrive)
         {
             Console.WriteLine("The drivers age is valid");
         }
