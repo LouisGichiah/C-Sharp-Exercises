@@ -50,29 +50,32 @@ Console.WriteLine("What would you like to do? (choose 1-4)");
 
     static void CompleteTask()
     {
-        if(tasks.Count == 0)
+        if (tasks.Count == 0)
         {
-            Console.WriteLine("No tasks to complete");
-        }
-        else
-        {
-        Console.WriteLine("Enter task number to mark as completed:");
-        if (int.TryParse(Console.ReadLine(), out int taskNumber));
-        taskNumber -= 1;
-
-        if (taskNumber < 0 || taskNumber >= tasks.Count)
-        {
-            Console.WriteLine("Invalid task number.");
+            Console.WriteLine("No tasks available to complete.");
             return;
         }
 
-        taskStatus[taskNumber] = true;
-        Console.WriteLine($"Task '{tasks[taskNumber]}' marked as completed.");
+        Console.WriteLine("Enter task number to mark as completed:");
+        if (int.TryParse(Console.ReadLine(), out int taskNumber) && taskNumber > 0 && taskNumber <= tasks.Count)
+        {
+            taskStatus[taskNumber - 1] = true;
+            Console.WriteLine($"Task '{tasks[taskNumber - 1]}' marked as completed.");
+        }
+        else
+        {
+            Console.WriteLine("Invalid task number.");
         }
     }
 
     static void ViewTasks()
     {
+        if (tasks.Count == 0)
+        {
+            Console.WriteLine("No tasks available.");
+            return;
+        }
+
         Console.WriteLine("Tasks:");
         for (int i = 0; i < tasks.Count; i++)
         {
